@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Joke</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Inter:wght@400;700&family=Lexend+Deca&family=Merriweather:ital@1&family=Montserrat&family=Nunito:ital,wght@0,400;0,600;0,700;1,300&family=Outfit:wght@200;300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&family=Sacramento&family=Titan+One&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background: #171010;
+      text-align: center;
+    }
+    .joke{
+      color: white;
+      font-family: 'Beau Rivage', cursive;
+      font-family: 'Inter', sans-serif;
+      font-family: 'Lexend Deca', sans-serif;
+      font-family: 'Merriweather', serif;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Nunito', sans-serif;
+      font-family: 'Outfit', sans-serif;
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Sacramento', cursive;
+      font-family: 'Titan One', cursive;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 30px;
+      text-align: left;
+    }
+    .jokecontainer{
+      position: relative;
+      top: 30px;
+      background: #362222;
+      width: 500px;
+      padding: 40px;
+      border-radius: 20px;
+      margin: 20px 40px 0 40px;
+    }
+
+    .gif,
+    .giphy-embed{
+      padding-top: 30px;
+    }
+
+
+    @media only screen and (min-width: 700px){
+      .jokecontainer{
+        width: 500px;
+      }
+    }
+    @media only screen and (min-width: 600px){
+      .jokecontainer{
+        width: 300px;
+      }
+    }
+
+    @media only screen and (max-width: 450px){
+      .jokecontainer{
+        width: 200px;
+        padding: 15px;
+      }
+      .joke{
+        font-size: 20px;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <center>
+    <div class="jokecontainer">
+      <h1 class="joke">
+        <%= jokeInput %>
+      </h1>
+    </div>
+    <div class="gif">
+      <iframe src= <%= gif %> width="100%" height="100%"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
+  </center>
+
+
+</body>
+</html>
